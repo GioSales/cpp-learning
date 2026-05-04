@@ -1,0 +1,27 @@
+# Deque.h Test Cases and Requirements
+
+## Initialization
+| Operation | Expected Outcome |
+| --- | --- |
+| Initialize deque with default size. | The deque should not have any elements but its capacity is set to a default value (e.g., 4). |
+
+## Enqueue/Dequeue from Front/Rear
+| Operation | Expected Outcome |
+| --- | --- |
+| Enqueue an element at the rear end and then dequeue it from the front end. | The deque should now have zero elements. |
+| Dequeue an element at the front end and then enqueue it at the rear end. | The deque should still have the same number of elements as before but in a different order. |
+
+## Size
+| Operation | Expected Outcome |
+| --- | --- |
+| Enqueue an element and check its size. | The size of the deque increases by one. |
+
+## Empty Check
+| Operation | Expected Outcome |
+| --- | --- |
+| Enqueue all elements, then dequeue them until empty, test for empty state. | Deque reports as empty when no elements are left. |
+
+## Front/Back Methods
+| Operation | Expected Outcome |
+| --- | --- |
+| Enqueue an element from both front and rear ends, then use `front` and `back` methods to access them. | The first-enqueued element can be accessed via the `front` method, and the last-enqueued element can be accessed via the `back` method.
